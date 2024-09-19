@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: demo
-          image: absolutezero24/laravel-kubernetes-demo
+          image: absolutezero24/laravel-kubernetes-demo:v1.1
           ports:
             - containerPort: 80
           env:
