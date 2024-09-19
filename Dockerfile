@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . /app
 RUN composer install
 
-FROM php:8.1.29-cli-alpine
+FROM php:8.1-apache
 
 EXPOSE 80
 COPY --from=build /app /app
